@@ -20,9 +20,9 @@ public class ProyVentaPuerta {
             System.out.println("\tMenu Principal");
             System.out.println("1.- Tipo de puerta");
             System.out.println("2.- Medidas");
-            System.out.println("3.- Mostar Pedido y Calcular Precio");
+            System.out.println("3.- Mostar Pedido ");
             System.out.println("4.- calcular costo de una custom door");
-            System.out.println("5.- Salir");
+            System.out.println("5.- Factura");
             System.out.println("6.- Salir");
             System.out.print("Seleciona una opcion: ");
             op = leer.nextInt();
@@ -65,12 +65,23 @@ public class ProyVentaPuerta {
                     }
                     break;
                 case 3:
-                                        break;
+                     mostrarpedido(puerta ,nomMadera,"   PEDIDO  ");
+                            
+                                     break;
                 case 4:
                     System.out.println("Costo Puerta : $"+puerta.Costopuerta());
                     break;
                 case 5 :
-                     System.out.println("Adios, vuelva pronto!");
+                    System.out.println("------------------------------------------------");
+                            System.out.println("\tFACTURA");
+                            System.out.println("Madera: "+"......"+nomMadera[puerta.getTipo()]);
+                            System.out.println("Altura: "+"......"+puerta.getAltura()+"mm");
+                            System.out.println("Anchura: "+"......"+puerta.getAnchura()+"mm");
+                            System.out.println("Grosor: "+"......"+puerta.getGrosor()+"mm");
+                            System.out.println("\t------------");
+                            System.out.println("......"+"$" + puerta.getPrecio());
+                            System.out.println("------------------------------------------------");
+
                 default:
                     System.out.println("------------------------------------------------");
                     System.out.println("Opcion no valida porfavor ingrese una opcion valida");
@@ -79,12 +90,21 @@ public class ProyVentaPuerta {
         } while (op != 6);
 
     }//Termina el main
+    
+          public static void mostrarpedido(Puerta puerta, String nomMadera[],String titulo){
+                            System.out.println("------------------------------------------------");
+                            System.out.println("\ttitulo");
+                            System.out.println("Madera: "+"......"+nomMadera[puerta.getTipo()]);
+                            System.out.println("Altura: "+"......"+puerta.getAltura()+"mm");
+                            System.out.println("Anchura: "+"......"+puerta.getAnchura()+"mm");
+                            System.out.println("Grosor: "+"......"+puerta.getGrosor()+"mm");
+                            System.out.println("------------------------------------------------");
 
-    
-    
-      public static void mostrarpedido(Puerta puerta, String nomMadera[]){
-        System.out.println("------------------------------------------------");
-                            System.out.println("\tFACTURA");
+    }
+
+       public static void Ventapedido(Puerta puerta, String nomMadera[]){
+                            System.out.println("------------------------------------------------");
+                            System.out.println("\tfg");
                             System.out.println("Madera: "+"......"+nomMadera[puerta.getTipo()]);
                             System.out.println("Altura: "+"......"+puerta.getAltura()+"mm");
                             System.out.println("Anchura: "+"......"+puerta.getAnchura()+"mm");
