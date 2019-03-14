@@ -2,15 +2,15 @@
 package poryherencia ;
 
 
-public class Comision extends Gerente  {
+public class Comision extends Empleado  {
     private double cmercancia;
     private double comision;
     public Comision(){
         this.cmercancia=0;
-        this.comision=0;
+       this.comision=0;
     }
-     public Comision (String na,double salary,String de,String ass){
-    super(na,salary,de,ass);
+     public Comision (String na,double salary){
+    super(na,salary);
     this.cmercancia=cmercancia;
     this.comision=comision;
     }
