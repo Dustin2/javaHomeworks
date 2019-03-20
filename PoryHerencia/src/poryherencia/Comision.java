@@ -9,8 +9,8 @@ public class Comision extends Empleado  {
         this.cmercancia=0;
        this.comision=0;
     }
-     public Comision (String na,double salary){
-    super(na,salary);
+     public Comision (String na,double salaryday,int dayslab){
+    super(na,salaryday,dayslab);
     this.cmercancia=cmercancia;
     this.comision=comision;
     }

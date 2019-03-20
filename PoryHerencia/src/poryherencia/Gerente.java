@@ -5,6 +5,7 @@ package poryherencia;
 public class Gerente extends Empleado {
 private String assistant;
 private String dto;
+private double bono;
 //Dpto = departamento
 
 public Gerente(){
@@ -12,9 +13,9 @@ this.dto=null;
 this.assistant=null;
 }
 
-public Gerente(String n,double s,String dto,String assistant){
+public Gerente(String n,String dto,String assistant,double salaryday,int dayslab){
     //llamar al constructor padre de la clase empleado
-super(n,s);
+super(n,salaryday,dayslab);
 this.dto=dto;
 this.assistant=assistant;
 }

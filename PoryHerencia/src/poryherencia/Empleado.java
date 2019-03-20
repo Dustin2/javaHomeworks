@@ -4,30 +4,46 @@ package poryherencia;
 public class Empleado {
   //sueldo=salsary
   private String name;
-  private double salary;
+  private double salaryday;
+  private int dayslab;
   
   
   ///constructor 
   public Empleado(){
   name=null;
-  salary=0;
+  salaryday=0;
+  dayslab=0;
   }
   ///constructor with paramets
-  public Empleado(String name,double salary){
+  public Empleado(String name,double salaryday,int dayslab){
       this.name=name;
-      this.salary=salary;
+      this.salaryday=salaryday;
+      this.dayslab=dayslab;
   }
   ///get and set
   public String getName(){
   return name;
   }
   public double getSalary(){
-  return salary;
+  return salaryday;
+  }
+  public int getdayslab(){
+  return dayslab;
   }
   public void setName(String name){
       this.name=name;
   }
-  public void steSalary(double salary){
-      this.salary=salary;
+  public void getSalary(double salary){
+      this.salaryday=salary;
+  }
+  public void setDayslab(int dayslab){
+  this.dayslab=dayslab;
+  }
+  public double calcularPago(){
+        double salary= this.salaryday*this.dayslab;
+      if (this.dayslab<=0) {
+          System.out.println("no haz trabajado");
+      }
+return salary;
   }
 }
