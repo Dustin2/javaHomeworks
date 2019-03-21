@@ -4,8 +4,8 @@ package poryherencia;
 public class Empleado {
   //sueldo=salsary
   private String name;
-  private double salaryday;
-  private int dayslab;
+  double salaryday;
+  int dayslab;
   
   
   ///constructor 
@@ -46,4 +46,5 @@ public class Empleado {
       }
 return salary;
   }
+
 }

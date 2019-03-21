@@ -18,6 +18,7 @@ public Gerente(String n,String dto,String assistant,double salaryday,int dayslab
 super(n,salaryday,dayslab);
 this.dto=dto;
 this.assistant=assistant;
+
 }
 //get an set
 
@@ -25,7 +26,7 @@ public String getdpto(){
 return dto;
 }
 public String getNAssistant(){
-return assistant;
+return assistant; 
 }
 
 ///set//
@@ -37,5 +38,23 @@ public void setAssistant(String assistant){
     this.assistant=assistant;
 }
  
-
+   public double calcularBono(){
+        double salary= this.salaryday*this.dayslab;
+        salary=salary*0.20+salary;
+      if (this.dayslab<=0) {
+          System.out.println("no haz trabajado y tampoco tiene bono");
+      }
+return salary;
+  }
+   public double cal(){
+    double n=0;
+   n=this.calcularPago()*0.20;
+       return n;
+   }
+   //////////////// metodo sobre escrito heredado de la clase empleado /////////////////
+@Override
+   public double calcularPago(){
+   
+       return 0;
+   }
 }

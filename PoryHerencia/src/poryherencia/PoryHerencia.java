@@ -24,6 +24,9 @@ public class PoryHerencia {
         System.out.println("sueldo diario"+g1.getSalary());
         System.out.println("dias laborados "+g1.getdayslab());
         System.out.println("pago quincenasl "+g1.calcularPago());
+        System.out.println("el bono es de :"+g1.cal());
+        System.out.println("su pago mas el bono es $: "+g1.calcularBono());
+
 
     }
     
