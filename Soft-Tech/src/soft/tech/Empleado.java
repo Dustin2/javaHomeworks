@@ -17,7 +17,11 @@
         Empleado(){
         }
         Empleado(String nom,String cedula,int edad,boolean casado,double salario){
-
+            this.nom=nom;
+            this.cedula=cedula;
+            this.edad=edad;
+            this.casado=casado;
+            this.salario=salario;
         }
         public String getnombre(){
         return nom;
@@ -54,18 +58,18 @@
         String tipotrabajador = null;
             if (edad<=21) {
                 tipotrabajador="principiante";
-                return tipotrabajador;
+              
             }
             if (edad>=22&& edad<=35) {
                 tipotrabajador="intermedio";
-                return tipotrabajador;
+            
             }
             if (edad>=35) {
                 tipotrabajador="senior";
-                return tipotrabajador;
+                
             }
-           
-        return null;
+             return tipotrabajador;
+          
         }
    
 }

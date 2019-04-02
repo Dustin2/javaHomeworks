@@ -27,8 +27,11 @@ public class Programador extends Empleado{
     public int gethoras(){
     return lineascodhora;
     }
-    public getlengu(){
-    
+    public void setlengu(String len){
+    this.lenguajedom=len;
+    }
+    public void sethoras(int lineas){
+    this.lineascodhora=lineas;
     }
     
 }
